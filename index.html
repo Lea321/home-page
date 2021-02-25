@@ -3,46 +3,46 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>这是一个个人主页</title>
+    <!-- 标题 -->
+    <title>Lea's homepage.</title>
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" href="./css/style.css" type="text/css">
     <link rel="stylesheet" href="./css/font-awesome.css" type="text/css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
-        <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
-        <!-- require MetingJS -->
-        <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
-        <meting-js
-            server="tencent"
-            type="playlist"
-            autoplay="true"
-            id="7903334636"
-            fixed="true">
-        </meting-js>
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1 user-scalable=no">
+    <!-- 音乐开始 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+    <!-- 播放器配置 -->
+    <meting-js server="tencent" type="playlist" autoplay="false" id="7903334636" volume=0.5 fixed="true">
+    </meting-js>
+    <!-- 音乐结束 -->
 </head>
 
 <body>
 
     <div class="card">
 
+        <!-- 头像 -->
         <div class="logo">
             <a href="http://wpa.qq.com/msgrd?v=3&uin=553344777&site=qq&menu=yes" title="打开QQ对话">
                 <img src="http://q1.qlogo.cn/g?b=qq&nk=553344777&s=5" alt="qq头像">
             </a>
         </div>
 
+        <!-- 名字 -->
         <div class="name">Lea</div>
 
+        <!-- 介绍 -->
         <div class="introduce">Nover forget to think.</div>
 
-
+        <!-- 添加好友 -->
         <div class="add" onclick="window.open('http://wpa.qq.com/msgrd?v=3&uin=553344777&site=qq&menu=yes')">
             <i class="fa fa-map-marker"></i>
             &nbsp;china 添加为好友
         </div>
 
-
+        <!-- 图标 -->
         <div class="icon">
             <a href="http://wpa.qq.com/msgrd?v=3&uin=553344777&site=qq&menu=yes" target="_blank">
                 <img src="./img/qq.png" alt="qq">
@@ -66,11 +66,13 @@
 
     </div>
 
+    <!-- 页脚 -->
     <footer>
         <p>&copy; 2021 by Lea.</p>
         <a href="https://beian.miit.gov.cn/">豫ICP备20005146号-2</a>
     </footer>
 
+    <!-- 脚本 -->
     <script>
         function wechat() {
             alert("微信号：A320000001");
